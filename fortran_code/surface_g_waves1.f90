@@ -4,8 +4,11 @@
 !=======================================================================
 
 module config_module
+	use main_module
  real*8 :: fac=1.0,mix=2e-06,L0,H0,B0
  real*8, allocatable :: T0(:,:,:),u0(:,:,:)
+ real *8 :: N_0 = 2* pi /10.
+ real *8 :: OM0 = 1./(1.5*10)
 end module config_module
 
 !=======================================================================
@@ -25,6 +28,7 @@ subroutine set_parameter
   dt_tracer=0.25/fac
   dt_mom   =0.25/fac
      
+	enable_free_surface= .true.
   enable_conserve_energy = .false.
   coord_degree           = .false.
 !***************
@@ -144,12 +148,16 @@ subroutine set_forcing
  use config_module   
  implicit none
  integer :: i,j,k
+ 	
+ !allocate ( u0 ( is_pe - onx : ie_pe + onx , js_pe - onx : je_pe + onx , nz ) ); u0 = 0
+
+
 ! real*8 :: rho0=1024 , tau0 = -0.05, y
 !--------------------------------
 ! surface_flux
 ! surface_tau
 ! temp_source
-! u_source
+! u_source=u0(1,:,1) * sin (2* pi * OM0 * itt * dt_tracer )
 !--------------------------------
 !      do j=1,ny
 !       do i=1,nx
@@ -200,12 +208,26 @@ kbot =1
 ! enddo
 
 ! Define how many slits to take
+! ==========================================
+! Double slits
 
-do i = 1, nx
-    do j = 1, ny
-        if (i == nx/2 .AND.  j == ny/3) kbot =0
+do i = is_pe, ie_pe
+    do j = js_pe, je_pe
+        if (i == 30 .AND. j .LE. 18 ) kbot(i,j) =0
+        if (i== 30 .AND. j .GE. 22 .AND. j .LE. 40) kbot(i,j) =0
+        if (i ==30 .AND. j .GE. 44) kbot(i,j)=0
     enddo
-enddo 
+enddo
+
+!================================================
+! Single slits
+
+!do i = is_pe, ie_pe
+!    do j = js_pe, je_pe
+!        if (i == 30 .AND. j .LE. 28 ) kbot(i,j) =0
+!                if (i == 30 .AND. j .GE. 33 ) kbot(i,j) =0
+!    enddo
+!enddo
 
 end subroutine set_topography
 
