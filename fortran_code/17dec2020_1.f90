@@ -2,6 +2,7 @@
 ! SURFACE WAVES EXPERIMENT
 ! By Johannes and Christine 
 ! Fortran Code for Calculating Surface Gravity Waves
+! December 17, 2020
 !=========================================================================================================
 
 module config_module
@@ -235,5 +236,4 @@ end subroutine set_diagnostics
 subroutine set_particles
 end subroutine set_particles
 
-
-
+! December 17, 2020 - Test 1
