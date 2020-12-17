@@ -1,10 +1,17 @@
+#=========================================================================================================
+# SURFACE WAVES EXPERIMENT
+# By Johannes and Christine 
+# Python Code for Visualization
+#=========================================================================================================
+
+# %% Import Modules
+
 import numpy as np
 import matplotlib.pylab as plt
 import seaborn as sns
 import xarray
 # import os
 
-# Programmed by Christine Kaufhold, IfM 2020
 
 # %% Set- Up
 
