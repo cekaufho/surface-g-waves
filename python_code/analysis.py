@@ -12,7 +12,6 @@ import seaborn as sns
 import xarray
 # import os
 
-
 # %% Set- Up
 
 data = xarray.open_dataset("2slit.cdf")
@@ -29,6 +28,7 @@ z = np.arange(20)*0.1
 # %% Plot T("x,y) at z = "10cm
 f, ax = plt.subplots(figsize=(18, 12))
 sns.heatmap(depth,annot=True,fmt=".1f", ax=ax,cmap="mako_r")
+
 
 """
 # %% Plot T(x,y) at z = 10cm
