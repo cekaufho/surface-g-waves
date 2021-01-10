@@ -18,7 +18,7 @@ import xarray
 
 # %% Set- Up
 
-data = xarray.open_dataset("02jan2021_5.cdf")
+data = xarray.open_dataset("02jan2021_1.cdf")
 depth = data["ht"]
 P, T = data["surf_press"], data["temp"]
 U, V, W = data["u"], data["v"], data["w"]
