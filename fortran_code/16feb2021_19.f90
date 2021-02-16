@@ -123,7 +123,8 @@ subroutine set_initial_conditions
 
   do j = js_pe, je_pe
    do i = is_pe, ie_pe
-    u0(i, j, 2) = maskU(i, j, 2) * 1./(100 * 60. * 100 * dt_tracer) * exp(-(xu(i)-x0)**2/(dxt(is_pe)*1)**2)
+    u0(i, j, 2) = maskU(i, j, 2) * 1./(100 * 60.0 * 100 dt_tracer) * exp( -(xu(i)-x0)**2/(dxt(is_pe)*1)**2 )
+   enddo
   enddo
 
 end subroutine set_initial_conditions
