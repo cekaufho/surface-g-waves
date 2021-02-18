@@ -2,7 +2,7 @@
 ! SURFACE WAVES EXPERIMENT
 ! By Johannes and Christine 
 ! Fortran Code for Calculating Surface Gravity Waves
-! Feb 17 - 03
+! Feb 17 - 3
 !=========================================================================================================
 
 module config_module
