@@ -1,7 +1,7 @@
 #=========================================================================================================
 # SURFACE WAVES EXPERIMENT
 # By Johannes and Christine 
-# Python Code for Visualization
+# Python Code for Visualizationn
 #=========================================================================================================
 
 import numpy as np
