@@ -1,6 +1,7 @@
 # Surface Gravity Waves
 
-Investigating surface gravity wave interference by the East Frisian Island chain. A summary of some of the key figures/findings are shown below.
+Investigating surface gravity wave interference by the East Frisian Island chain.<br>
+A summary of some of the key figures/findings are shown below.
 
 <p align="center">
   <img src="https://github.com/cekaufho/surface-g-waves/blob/main/img/image1.png?raw=true" alt="Experimental Set-up"/><br><br>
