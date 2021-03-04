@@ -1,12 +1,12 @@
 # Surface Gravity Waves
 
 Investigating surface gravity wave interference by the East Frisian Island chain.<br>
-The work in progress can be seen below:
+A summary of some of the key figures/findings are shown below.
 
-#<p align="center">
-![Alt text](python_code/img/image1.png?raw=true "Experimental Set-up")
-![Alt text](python_code/img/image2.png?raw=true "Effect of Coriolis on the experiment")
-![Alt text](python_code/img/image3.png?raw=true "Effect of bottom friction on the experiment")
-![Alt text](python_code/img/image4.png?raw=true "Interference patterns")
-![Alt text](python_code/img/image5.png?raw=true "Physical scale simulation")
+<p align="center">
+  <img src="https://github.com/cekaufho/surface-g-waves/blob/main/img/image1.png?raw=true" alt="Experimental Set-up"/><br><br>
+  <img src="https://github.com/cekaufho/surface-g-waves/blob/main/img/image2.png?raw=true" alt="Effect of the Coriolis parameter"/><br><br>
+  <img src="https://github.com/cekaufho/surface-g-waves/blob/main/img/image3.png?raw=true" alt="Effect of bottom friction"/><br><br>
+  <img src="https://github.com/cekaufho/surface-g-waves/blob/main/img/image4.png?raw=true" alt="Interference patterns"/><br><br>
+  <img src="https://github.com/cekaufho/surface-g-waves/blob/main/img/image5.png?raw=true" alt="Physical scale simulation"/>
 </p>
