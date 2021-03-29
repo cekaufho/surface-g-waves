@@ -1,4 +1,5 @@
 # Surface Gravity Waves
+![GitHub repo size](https://img.shields.io/github/repo-size/cekaufho/surface-g-waves)
 
 Investigating surface gravity wave interference by the East Frisian Island chain.<br>
 A summary of some of the key figures/findings are shown below.
