@@ -1,8 +1,7 @@
 # Surface Gravity Waves
 ![GitHub repo size](https://img.shields.io/github/repo-size/cekaufho/surface-g-waves)
 
-Investigating surface gravity wave interference by the East Frisian Island chain using the pyOM ocean model, developed at the Universität Hamburg.<br>
-A summary of some of the key figures/findings are shown below.
+Investigating surface gravity wave interference by the East Frisian Island chain using the pyOM ocean model, developed at the Universität Hamburg. A summary of some of the key figures/findings are shown below.
 
 <p align="center">
   <img src="https://github.com/cekaufho/surface-g-waves/blob/main/img/image1.png?raw=true" alt="Experimental Set-up"/><br><br>
